@@ -1,15 +1,19 @@
 # Mark all files as vendored by default
 * linguist-vendored
 
-# Exclude certain file types from being marked as vendored
+# Exclude specific file types from being marked as vendored
 !*.php linguist-vendored=false
-!*.js linguist-vendored=false
 !*.blade.php linguist-vendored=false
 !*.vue linguist-vendored=false
+
+# Include only essential JavaScript files
+!/resources/js/app.js linguist-vendored=false
+!/resources/js/bootstrap.js linguist-vendored=false
 
 # Exclude specific directories from being marked as vendored
 /public/css/* linguist-vendored
 /resources/css/* linguist-vendored
+/resources/js/components/* linguist-vendored
 
 # Existing diff and export-ignore rules
 *.blade.php diff=html
