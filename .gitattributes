@@ -1,5 +1,17 @@
-* text=auto
+# Mark all files as vendored by default
+* linguist-vendored
 
+# Exclude certain file types from being marked as vendored
+\!*.php
+\!*.js
+\!*.blade.php
+\!*.vue
+
+# Exclude specific directories from being marked as vendored
+/public/css/* linguist-vendored
+/resources/css/* linguist-vendored
+
+# Existing diff and export-ignore rules
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
