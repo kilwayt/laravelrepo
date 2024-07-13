@@ -1,11 +1,15 @@
 <?php
 
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrderController;
 use App\Mail\OrderEndingSoon;
 use Illuminate\Support\Facades\Mail;
+
+use App\Http\Controllers\StudentController;
+
 
 
 
@@ -78,6 +82,7 @@ Route::get('/test-email', function () {
 });
 
 
+Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
 
 
 // Include authentication routes

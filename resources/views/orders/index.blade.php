@@ -27,7 +27,6 @@
                     <td>{{ $order->start_date }}</td>
                     <td>{{ $order->end_date }}</td>
                     <td>
-                        <a href="{{ route('orders.show', $order) }}" class="btn btn-info">Show</a>
                         <a href="{{ route('orders.edit', $order) }}" class="btn btn-warning">Edit</a>
                         <form action="{{ route('orders.destroy', $order) }}" method="POST" style="display:inline;">
                             @csrf

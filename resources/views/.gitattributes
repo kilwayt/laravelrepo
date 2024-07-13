@@ -1,0 +1,12 @@
+# Mark all files as vendored by default
+* linguist-vendored
+
+# Exclude certain file types from being marked as vendored
+\!*.php
+\!*.js
+\!*.blade.php
+\!*.vue
+
+# Vendor specific directories to be excluded
+/public/css/* linguist-vendored
+/resources/css/* linguist-vendored
