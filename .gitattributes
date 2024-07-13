@@ -6,9 +6,8 @@
 !*.blade.php linguist-vendored=false
 !*.vue linguist-vendored=false
 
-# Include only essential JavaScript files
-!/resources/js/app.js linguist-vendored=false
-!/resources/js/bootstrap.js linguist-vendored=false
+# Exclude JavaScript files except essential ones
+*.js linguist-vendored
 
 # Exclude CSS and SCSS files
 *.css linguist-vendored
@@ -18,6 +17,7 @@
 /public/css/* linguist-vendored
 /resources/css/* linguist-vendored
 /resources/js/components/* linguist-vendored
+/resources/js/* linguist-vendored
 
 # Existing diff and export-ignore rules
 *.blade.php diff=html
