@@ -10,6 +10,10 @@
 !/resources/js/app.js linguist-vendored=false
 !/resources/js/bootstrap.js linguist-vendored=false
 
+# Exclude CSS and SCSS files
+*.css linguist-vendored
+*.scss linguist-vendored
+
 # Exclude specific directories from being marked as vendored
 /public/css/* linguist-vendored
 /resources/css/* linguist-vendored
