@@ -2,10 +2,10 @@
 * linguist-vendored
 
 # Exclude certain file types from being marked as vendored
-\!*.php
-\!*.js
-\!*.blade.php
-\!*.vue
+!*.php linguist-vendored=false
+!*.js linguist-vendored=false
+!*.blade.php linguist-vendored=false
+!*.vue linguist-vendored=false
 
 # Exclude specific directories from being marked as vendored
 /public/css/* linguist-vendored
